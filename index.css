@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #007a33;
+  font-family: "Exo 2", sans-serif;
+  min-height: 100vh;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+h2 {
+  font-size: 4.5rem;
+}
+h3 {
+  font-size: 3rem;
+}
+
+button {
+  font-size: 4em;
+  background-color: #fff100;
+  cursor: pointer;
+  border: none;
+}
+
+button#new-deck {
+  align-self: flex-start;
+  padding: 0.313rem 1rem;
+  text-align: center;
+  border-radius: 0 0.313rem 0.313rem 0;
+}
+
+button.draw {
+  padding: 0.313rem;
+  align-self: stretch;
+}
+
+div.card-slot {
+  border: 1px solid black;
+  border-radius: 0.313rem;
+  height: 24rem;
+  width: calc(24rem * 5 / 7);
+}
+
+div.card-slot:nth-of-type(1) {
+  margin-bottom: 1rem;
+}
+
+img.card {
+  width: 100%;
+  height: 100%;
+}
+
+div.top {
+  display: flex;
+  align-items: flex-start;
+  align-self: flex-start;
+}
+
+div.top > p {
+  margin: 0.5rem 0 0rem 0.6rem;
+  font-size: 3rem;
+}
+
+h2 {
+  margin: 0.625rem;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  button {
+    font-size: 2em;
+  }
+
+  button#new-deck {
+    align-self: flex-start;
+    padding: 0.313rem 1rem;
+    text-align: center;
+    border-radius: 0 0.313rem 0.313rem 0;
+  }
+
+  button.draw {
+    align-self: stretch;
+  }
+
+  div.card-slot {
+    height: 10rem;
+    width: calc(10rem * 5 / 7);
+  }
+  div.top > p {
+    margin: 0.5rem 0 0rem 0.6rem;
+    font-size: 2rem;
+  }
+}
